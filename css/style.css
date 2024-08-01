@@ -1,0 +1,213 @@
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  * {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Kanit;
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    }
+
+.navegador {
+        width: 100%;
+        border-bottom: 1px solid rgb(195, 130, 238);
+        background-color: #330066;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        gap: 80px;
+        .menuIzquierda , .menuDerecha{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        }
+        }
+
+.navegador li {
+        list-style: none;
+        }
+
+.navegador a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        }
+
+
+.logoIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+.logo {
+        width: auto;
+        height: 50px;
+        }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #551B8C;
+    }
+
+
+.contenedor{
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.todoVioleta{
+    font-size: 30px
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-content: center;
+    height: 10%;
+    gap: 20px;
+}
+
+.redes a {
+    font-size: 25px;
+    transition: all ease 300ms;
+}
+
+
+
+.container{
+    width: 2560px;
+    /* height: 1080px; */
+    object-fit: contain;  /*ojo*/
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* 
+.item{
+    max-height: 500px;
+    width: auto;
+    object-fit: none;
+} */
+
+
+
+
+
+.footer {
+    background-color: #330066;
+    padding: 5px 0; /* reduce el padding para que el footer no sea tan alto */
+    border-top: 1px solid rgb(195, 130, 238);
+    margin-top: 30px;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footerFila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+}
+
+
+.logoFooter img {
+    height: 40px;
+    display: flex;
+    margin: 30px;
+}
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.partners h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.logoPartners {
+    display: flex;
+    gap: 10px;
+}
+
+.logoPartners img {
+    height: 40px;
+}
+
+.footerContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos internamente a la izquierda */
+    gap: 5px;
+    margin-left: auto; /* Mueve el div hacia la derecha */
+}
+
+.footerContacto a {
+    text-decoration: none;
+    color: rgb(201, 201, 201);
+    font-size: 15px;
+}
+
+.footerContacto a:hover {
+    color: rgb(195, 130, 238);
+}
+
+.footer h6 {
+    font-size: 10px;
+    color: #999;
+}
+
+
+/*--------------------------------*/
+
+
+
+
+
+/* .contenedorSomos{
+    display: flex;
+    justify-content:space-between;
+    padding: 40px;
+    margin: 10rem auto 0 auto;
+} */
+
+.historia{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:space-between;
+    padding: 40px;
+    margin: 10rem auto 0 auto;
+}
+
+.historia img{
+    width: 20px;
+}
+
+.historia p{
+    margin: 15px;
+}

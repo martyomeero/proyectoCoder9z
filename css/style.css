@@ -12,52 +12,63 @@
     font-family: Kanit;
     text-decoration: none;
     color: rgb(201, 201, 201);
-    }
+}
 
 .navegador {
-        width: 100%;
-        border-bottom: 1px solid rgb(195, 130, 238);
-        background-color: #330066;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 0;
-        gap: 80px;
-        .menuIzquierda , .menuDerecha{
-        display: flex;
-        flex-direction: row;
-        gap: 80px;
-        }
-        }
+    width: 100%;
+    border-bottom: 1px solid rgb(101, 65, 158);
+    background-image: url(../assets/img/footer.webp);
+    /* background-color: #330066; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 80px;
+    .menuIzquierda , .menuDerecha{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    }
+}
 
 .navegador li {
-        list-style: none;
-        }
+    list-style: none;
+}
 
 .navegador a {
-        text-decoration: none;
-        color: inherit;
-        font-size: 16px;
-        }
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
 
 
 .logoIcon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .logo {
-        width: auto;
-        height: 50px;
-        }
+    width: auto;
+    height: 50px;
+}
 
+.navegador .menuDerecha :hover {
+    color: rgb(195, 130, 238);
+    transform: scale(1.1)
+}
+        
+.navegador .menuIzquierda :hover {
+    color: rgb(195, 130, 238);
+    transform: scale(1.1)
+}
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #551B8C;
-    }
+    /* background-color: #551B8C; */
+    background-image: radial-gradient(circle at center,#1d1533 0%,#141414 70%)!important;
+}
 
 
 .contenedor{
@@ -85,6 +96,10 @@ body {
     transition: all ease 300ms;
 }
 
+.redes :hover {
+    color: rgb(195, 130, 238);
+}
+
 
 
 .container{
@@ -107,9 +122,10 @@ body {
 
 
 .footer {
-    background-color: #330066;
+    /* background-color: #330066; */
+    background-image: url(../assets/img/footer.webp);
     padding: 5px 0; /* reduce el padding para que el footer no sea tan alto */
-    border-top: 1px solid rgb(195, 130, 238);
+    border-top: 1px solid rgb(101, 65, 158);
     margin-top: 30px;
 }
 
@@ -163,8 +179,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Alinea los elementos internamente a la izquierda */
-    gap: 5px;
+    gap: 4px;
     margin-left: auto; /* Mueve el div hacia la derecha */
+    margin-top: 10px;
 }
 
 .footerContacto a {
@@ -175,6 +192,7 @@ body {
 
 .footerContacto a:hover {
     color: rgb(195, 130, 238);
+    transform: scale(1.1)
 }
 
 .footer h6 {
@@ -182,6 +200,13 @@ body {
     color: #999;
 }
 
+
+
+
+@media screen and (max-width: 768px){
+    
+    
+}
 
 /*--------------------------------*/
 

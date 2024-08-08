@@ -12,6 +12,7 @@
     font-family: Kanit;
     text-decoration: none;
     color: rgb(201, 201, 201);
+    /* border: solid red; Para ver que se rompe al hacerlo responsive */
 }
 
 nav{
@@ -34,6 +35,7 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 80px;
+    flex-shrink: 3;
     }
 }
 
@@ -61,6 +63,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .logo {
@@ -139,7 +142,7 @@ ul{
 
     .navegador {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
         position: relative;
         padding: 20px;
@@ -148,7 +151,7 @@ ul{
     .logoIcon {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -164,13 +167,13 @@ ul{
     .navegador .toggleBtn {
         display: block !important;
         position: absolute;
-        right: 20px; 
-        z-index: 1001; 
+        right: 20px;
+        z-index: 1001;
     }
     .dropDownMenu.open {
         height: 180px; /* Ajusta según el contenido */
     }
-    
+
     .dropDownMenu {
         display: none; /* Añade esta línea si el menú debería estar oculto por defecto */
         transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -178,14 +181,37 @@ ul{
 
     .dropdown-menu a {
         color: rgb(201, 201, 201);
-    }    
-    
+    }
+
     .dropDownMenu.open {
         display: block;
     }
-    
+
 }
 
+@media screen and (max-width: 920px) {
+    .logo {
+        height: 30px;
+        width: auto;
+    }
+
+    .menuIzquierda, .menuDerecha {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        flex-shrink: 3;
+        gap: 20px;
+    }
+
+    .navegador a{
+        font-size: 12px;
+    }
+    
+    .navegador{
+        gap: 30px;
+    }
+
+}
 
 body {
     margin: 0;

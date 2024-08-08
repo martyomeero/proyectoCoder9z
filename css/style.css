@@ -89,6 +89,80 @@ ul{
     transition: all 0.2s ease-in;
 }
 
+.toggleBtn{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.logoResponsive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownMenu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur (15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDownMenu li{
+    text-decoration: none;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: rgb(201, 201, 201);
+}
+
+
+.dropDownMenu.open{
+    height: 180px;
+}
+
+/* NAV RESPONSIVE*/
+@media screen and (max-width: 768px){
+    /* .navegador{
+        
+    } */
+
+    .menuDerecha , .menuIzquierda{
+        display: none;
+    }
+
+    .navegador .toggleBtn{
+        display: block;
+    }
+    .logoIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: auto;
+        height: 25px;
+    }
+
+    .dropDownMenu{
+        display: block;
+    }
+
+
+
+
+}
+
 
 body {
     margin: 0;
@@ -231,10 +305,66 @@ body {
 
 
 
-
+/* FOOTER RESPONSIVE */
 @media screen and (max-width: 768px){
+    .todoVioleta{
+        font-size: 15px;
+    }
 
+    .footerContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .footerFila {
+        display: flex;
+        justify-content: space-between;
+        /* align-items: stretch; */
+        flex-direction: column;
+        align-content: center;
+        width: 80%;
+        gap: 30px;
+    }
+     .logoFooter{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+     }
+     .logoFooter img {
+        height: 20px;
+    }
+    .partners{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .logoPartners img {
+        height: 15px;
+    }
+    .partners h2 {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    .footerContacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinea los elementos internamente a la izquierda */
+        gap: 4px;
+        margin-left: auto; /* Mueve el div hacia la derecha */
+        margin-top: 10px;
+    }
 
+    .footerContacto a {
+        text-decoration: none;
+        color: rgb(201, 201, 201);
+        font-size: 10px;
+    }
+
+    .redes a{
+        font-size: 15px;
+}
 }
 
 /*--------------------------------*/

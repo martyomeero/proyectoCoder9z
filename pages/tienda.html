@@ -98,6 +98,19 @@
 
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const toggleBtn = document.querySelector('.toggleBtn');
+        const dropDownMenu = document.querySelector('.dropDownMenu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+        };
+    });
+</script>
+
 
 
 

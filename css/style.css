@@ -565,3 +565,124 @@ body {
         font-size: 25px;
     }
 }
+
+
+
+/* ------------------contacto-------------- */
+
+.contactContainer {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+  }
+
+  .placeholder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background-image: radial-gradient(circle at center,#361072 0%,#141414 70%);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(146.34deg, rgba(126, 45, 249, .35) 6.18%, rgba(66, 0, 145, .35) 100%), linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+    border: 1px;
+    border: 1px solid #a06efd;
+  }
+
+  /* .card-header {
+    padding: 16px;
+  } */
+
+  .card-header h1 {
+    margin: 0;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .card-header p {
+    margin: 0;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-group input, textarea{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+  }
+
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding-top: 30px;
+  }
+
+  .submit-button {
+    background-color: #6d28d9;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .card-footer {
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }

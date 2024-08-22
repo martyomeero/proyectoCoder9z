@@ -236,12 +236,85 @@
 
 }
 // ----contacto----
-@media screen and (max-width: 768px) {
-	.image-section{
-		display: none;
-	}
-}
+@media screen and (max-width: 450px) {
+  .image-section {
+    display: none;
+  }
 
+  .contactContainer {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  .form-section {
+    .card {
+      width: 100%; 
+      max-width: 100%; 
+      padding: 20px; 
+      box-shadow: none; 
+      border: 0; 
+      margin: 0 auto; 
+
+      .card-header {
+        h1 {
+          font-size: 20px; 
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 14px; 
+          padding: 0;
+        }
+      }
+
+      .card-content {
+        padding: 10px;
+
+        .form-grid {
+          grid-template-columns: 1fr; 
+          gap: 8px;
+        }
+
+        .form-group {
+          input,
+          textarea {
+            font-size: 12px; 
+            padding: 8px;
+          }
+        }
+      }
+
+      .card-footer {
+        padding: 12px;
+        margin-bottom: 10px;
+
+        .submit-button {
+          width: 100%; 
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .social-media {
+      padding: 20px;
+
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      .redes {
+        gap: 12px;
+
+        div a {
+          font-size: 18px; 
+        }
+      }
+    }
+  }
+}
 // ----tienda----
 @media screen and (max-width: 768px) {
 	.tiendaSection .desplegable{

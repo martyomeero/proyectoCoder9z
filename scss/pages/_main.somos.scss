@@ -1,0 +1,33 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+.image-placeholder {
+    background-color: #adb5bd;
+    @extend %centered;
+    margin: auto;
+  
+    img {
+      @include sizes(100%, auto);
+      // width: 100%;
+      // height: auto;
+    }
+  }
+  
+  .text-content {
+    max-width: 80%;
+    margin: auto;
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  
+  .col-md-6 {
+    padding: 0;
+  }
+  

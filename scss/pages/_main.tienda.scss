@@ -1,0 +1,69 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+.tiendaSection {
+    text-align: center;
+    padding: 50px 0;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        color: $color_1;
+        margin: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .desplegable {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0 0 30px 100px;
+        padding: 5px;
+    }
+}
+
+.tiendaContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tiendaCard {
+    position: relative;
+    width: 400px;
+    background-color: $color_8;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    img {
+        @include sizes(100%, auto);
+        // width: 100%;
+        // height: auto;
+        display: block;
+    }
+
+    &::after {
+        content: ""; 
+        position: absolute;
+        height: 5px;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        background: $color_9;
+        transition: width 0.5s; 
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}

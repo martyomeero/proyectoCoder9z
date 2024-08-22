@@ -1,0 +1,101 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navegador {
+    width: 100%;
+    border-bottom: 1px solid $color_5;
+    background-image: url(../assets/img/footer.webp);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    gap: 80px;
+
+    .menuIzquierda, 
+    .menuDerecha {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        flex-shrink: 3;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+        color: $color_6;
+        transition: all 0.2s ease-in;
+    }
+
+    .logoIcon {
+        @extend %centered;
+        flex-shrink: 0;
+
+        .logo {
+            @include sizes(auto, 50px);
+            // width: auto;
+            // height: 50px;
+        }
+    }
+
+    .menuIzquierda :hover, 
+    .menuDerecha :hover {
+        transform: scale(1.1);
+        color: $color_4;
+        text-shadow: 0px 0px 20px #d18efd;
+        transition: all 0.2s ease-in;
+    }
+
+    .toggleBtn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+.logoResponsive {
+    @extend %centered;
+}
+
+.dropDownMenu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    @include sizes(200px, 0);
+    // height: 0;
+    // width: 200px;
+    background-image: radial-gradient(circle at center, #1d1533 0%, #141414 70%)!important;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    li {
+        text-decoration: none;
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: $color_1;
+    }
+
+    &.open {
+        height: 180px;
+    }
+}
+
+

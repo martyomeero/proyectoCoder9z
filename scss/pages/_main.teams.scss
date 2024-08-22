@@ -1,0 +1,63 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+.teamSection {
+    text-align: center;
+    padding: 50px 0;
+  
+    h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+      padding-bottom: 40px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 50px;
+    }
+  
+    .teamContainer {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+  
+    .teamCard {
+      position: relative;
+      width: 800px;
+      background-color: #000;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  
+      img {
+        @include sizes(100%, auto);
+        // width: 100%;
+        // height: auto;
+        display: block;
+      }
+  
+      .teamInfo {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        padding: 20px;
+        color: $color_6;
+        text-align: center;
+  
+        h2 {
+          margin: 0;
+          font-size: 20px;
+        }
+      }
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+}

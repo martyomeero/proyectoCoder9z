@@ -1,0 +1,250 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+@media screen and (max-width: 768px) {
+	.menuIzquierda {
+		display: none !important;
+	}
+	.menuDerecha {
+		display: none !important;
+	}
+	.navegador {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding: 30px;
+		.toggleBtn {
+			display: block !important;
+			position: absolute;
+			right: 20px;
+			z-index: 1001;
+		}
+	}
+	.logoIcon {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo {
+		height: 25px;
+		width: auto;
+	}
+	.dropDownMenu.open {
+		height: 180px;
+		display: block;
+	}
+	.dropDownMenu {
+		display: none;
+		transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.dropdown-menu {
+		a {
+			color: $color_1;
+		}
+	}
+	.todoVioleta {
+		font-size: 15px;
+	}
+	.footerContainer {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 0;
+	}
+	.footerFila {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		gap: 30px;
+	}
+	.logoFooter {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		img {
+			height: 35px;
+		}
+	}
+	.partners {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			margin-bottom: 10px;
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+	.logoPartners {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		img {
+			height: 30px;
+		}
+	}
+	.footerContacto {
+		display: flex;
+		flex-direction: column;
+		// align-items: flex-start;
+		// gap: 4px;
+		// margin-left: auto;
+		// margin-top: 10px;
+		// margin: 30px;
+		a {
+			text-decoration: none;
+			color: $color_1;
+			font-size: 15px;
+		}
+	}
+	.redes {
+		a {
+			font-size: 15px;
+		}
+	}
+}
+@media screen and (max-width: 920px) {
+	.logo {
+		height: 30px;
+		width: auto;
+	}
+	.menuIzquierda {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		flex-shrink: 3;
+		gap: 20px;
+	}
+	.menuDerecha {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		flex-shrink: 3;
+		gap: 20px;
+	}
+	.navegador {
+        gap: 30px;
+		a {
+			font-size: 12px;
+		}
+	}
+}
+@media screen and (max-width: 650px) {
+	.teamSection {
+		h1 {
+			font-size: 25px;
+		}
+	}
+	.footerVioleta {
+		font-size: 18px;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logoFooter {
+        margin-bottom: 20px;
+    }
+
+    .footerFila {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+
+        .partners {
+            align-items: center;
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .logoPartners {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+
+    .footerContacto {
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer.footer{
+        display: flex;
+        justify-content: center;
+
+        .footerContainer {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+
+        .logoFooter {
+            margin-bottom: 5px;
+        }
+
+        .footerFila {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            // width: 100%;
+            text-align: center;
+
+            .partners {
+                align-items: center;
+
+                h2 {
+                    font-size: 18px;
+					display: flex;
+					justify-content: center;
+                }
+            }
+        }
+		.footerContacto {
+            display: flex;
+            flex-direction: column;
+			padding-top: 10px;
+		}
+    }
+
+}
+}
+
+// ----index----
+@media screen and (max-width: 768px) {
+	.videoContainer p{
+		font-size: 15px;
+	}
+
+}
+// ----contacto----
+@media screen and (max-width: 768px) {
+	.image-section{
+		display: none;
+	}
+}
+
+// ----tienda----
+@media screen and (max-width: 768px) {
+	.tiendaSection .desplegable{
+		margin: 0 0 30px 50px
+	}
+}

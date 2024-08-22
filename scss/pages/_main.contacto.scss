@@ -1,0 +1,136 @@
+@import "../utilities/variables";
+@import "../utilities/extend"; 
+@import "../utilities/mixin";
+
+.contactContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.image-section {
+  flex: 1;
+  @extend %centered;
+  background-color: $color_1;
+
+  .placeholder-img {
+    @include sizes(100%, 100%);
+    //   width: 100%;
+    //   height: 100%;
+      object-fit: cover;
+  }
+}
+
+.form-section {
+  flex: 1;
+  @extend %centered;
+  flex-direction: column;
+  padding: 16px;
+  background-image: radial-gradient(circle at center, #361072 0%, #141414 70%);
+
+  .card {
+    @include sizes(100%, 750px);
+    //   width: 100%;
+      max-width: 500px;
+    //   height: 750px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(146.34deg, rgba(126, 45, 249, .35) 6.18%, rgba(66, 0, 145, .35) 100%), 
+                  linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+      border: 1px solid $color_4;
+
+      .card-header {
+          padding: 16px;
+
+          h1 {
+              margin: 0;
+              font-size: 24px;
+              display: flex;
+              justify-content: center;
+              margin-top: 30px;
+              margin-bottom: 30px;
+          }
+
+          p {
+              margin: 0;
+              font-size: 15px;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              padding: 5px;
+          }
+      }
+
+      .card-content {
+          padding: 20px;
+
+          .form-grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 16px;
+          }
+
+          .form-group {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+
+              input, textarea {
+                  border: 1px solid $color_1;
+                  border-radius: 4px;
+                  font-size: 14px;
+                  box-sizing: border-box;
+                  padding: 10px;
+              }
+
+              label {
+                  font-weight: bold;
+              }
+          }
+
+          .checkbox-group {
+              display: flex;
+              align-items: baseline;
+              gap: 8px;
+              padding-top: 30px;
+          }
+      }
+
+      .card-footer {
+          padding: 16px;
+          margin-bottom: 20px;
+
+          .submit-button {
+              background-color: $color_7;
+              color: $color_6;
+              border: none;
+              padding: 12px 24px;
+              border-radius: 4px;
+              cursor: pointer;
+          }
+      }
+  }
+
+  .social-media {
+      @extend %centered;
+      flex-direction: column;
+      padding: 30px;
+
+      p {
+          margin: 0;
+          margin-bottom: 30px;
+          font-size: 20px;
+      }
+
+      .redes {
+          display: flex;
+          gap: 16px;
+
+          div {
+              a {
+                @extend %centered;
+                color: #000; // color de los iconos, ajusta según sea necesario
+              }
+          }
+      }
+  }
+}

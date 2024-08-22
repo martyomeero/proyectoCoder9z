@@ -15,6 +15,7 @@
     /* border: solid red; Para ver que se rompe al hacerlo responsive */
 }
 
+/* ----------HEADER------------ */
 nav{
     position: sticky;
     top: 0;

@@ -1,0 +1,13 @@
+  @import "./variables"; 
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Kanit;
+    text-decoration: none;
+    color: $color_1;
+    /* border: solid red; Para ver que se rompe al hacerlo responsive */
+}
+

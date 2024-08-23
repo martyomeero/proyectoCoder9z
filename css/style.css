@@ -626,7 +626,6 @@ body {
   .card {
     width: 100%;
     max-width: 500px;
-    height: 700px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(146.34deg, rgba(126, 45, 249, .35) 6.18%, rgba(66, 0, 145, .35) 100%), linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));

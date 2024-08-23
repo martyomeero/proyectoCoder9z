@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -268,6 +269,7 @@ h3 {
 .contactContainer {
   display: flex;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .image-section {
@@ -326,7 +328,8 @@ h3 {
   flex-direction: column;
   gap: 8px;
 }
-.form-section .card .card-content .form-group input, .form-section .card .card-content .form-group textarea {
+.form-section .card .card-content .form-group input,
+.form-section .card .card-content .form-group textarea {
   border: 1px solid rgb(201, 201, 201);
   border-radius: 4px;
   font-size: 14px;
@@ -368,7 +371,7 @@ h3 {
   gap: 16px;
 }
 .form-section .social-media .redes div a {
-  color: #000;
+  color: #000; /* color de los iconos, ajusta según sea necesario */
 }
 
 .footerIconRedes, footer.footer .footerContainer .footerContacto, footer.footer .footerContainer .footerFila .partners .logoPartners, footer.footer .footerContainer .footerFila, footer.footer .footerContainer .logoFooter, footer.footer .footerContainer, .navegador .logoIcon, .logoResponsive, .image-placeholder, .image-section, .form-section, .form-section .social-media, .form-section .social-media .redes div a {
@@ -757,9 +760,65 @@ body {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 414px) {
   .image-section {
     display: none;
+  }
+  .contactContainer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .form-section {
+    padding: 0 !important;
+  }
+  .form-section .card {
+    padding: 0 !important;
+    box-shadow: none;
+    border: 0;
+    margin: 0 auto;
+  }
+  .form-section .card .card-header h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form-section .card .card-header p {
+    font-size: 14px;
+    padding: 0;
+  }
+  .form-section .card .card-content {
+    padding: 10px;
+  }
+  .form-section .card .card-content .form-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .form-section .card .card-content .form-group input,
+  .form-section .card .card-content .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .form-section .card .card-footer {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .form-section .card .card-footer .submit-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .form-section .social-media {
+    padding: 20px;
+  }
+  .form-section .social-media p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .form-section .social-media .redes {
+    gap: 12px;
+  }
+  .form-section .social-media .redes div a {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 768px) {

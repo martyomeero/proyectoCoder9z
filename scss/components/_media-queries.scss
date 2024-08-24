@@ -241,7 +241,7 @@
 		display: none;
 	}
 	.contactContainer {
-	  flex-direction: column; /* Apila los elementos en dispositivos pequeños */
+	  flex-direction: column; 
 	}
   
 	.form-section, 
@@ -251,7 +251,7 @@
   
 	.image-section .placeholder-img {
 	  height: auto;
-	  object-fit: contain; /* Ajusta el contenido de la imagen para pantallas pequeñas */
+	  object-fit: contain; 
 	}
   }
   

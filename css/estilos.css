@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -268,7 +267,7 @@ h3 {
 
 .contactContainer {
   display: flex;
-  flex-direction: row; /* Mantiene la imagen y el formulario lado a lado */
+  flex-direction: row;
 }
 .contactContainer .form-section,
 .contactContainer .image-section {
@@ -766,7 +765,7 @@ body {
     display: none;
   }
   .contactContainer {
-    flex-direction: column; /* Apila los elementos en dispositivos pequeños */
+    flex-direction: column;
   }
   .form-section,
   .image-section {
@@ -774,7 +773,7 @@ body {
   }
   .image-section .placeholder-img {
     height: auto;
-    object-fit: contain; /* Ajusta el contenido de la imagen para pantallas pequeñas */
+    object-fit: contain;
   }
 }
 @media screen and (max-width: 768px) {

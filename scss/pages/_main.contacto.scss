@@ -4,12 +4,15 @@
 
 .contactContainer {
   display: flex;
-  min-height: 100vh;
-  flex-direction: column; 
+  flex-direction: row; /* Mantiene la imagen y el formulario lado a lado */
+  
+  .form-section, 
+  .image-section {
+    flex: 1;
+  }
 }
 
 .image-section {
-  flex: 1;
   @extend %centered;
   background-color: $color_1;
 
@@ -20,12 +23,11 @@
 }
 
 .form-section {
-  flex: 1;
   @extend %centered;
   flex-direction: column;
   padding: 16px;
   background-image: radial-gradient(circle at center, #361072 0%, #141414 70%);
-
+  
   .card {
     width: 100%;
     max-width: 500px; 
@@ -130,7 +132,7 @@
       div {
         a {
           @extend %centered;
-          color: #000; /* color de los iconos, ajusta según sea necesario */
+          color: #000;
         }
       }
     }

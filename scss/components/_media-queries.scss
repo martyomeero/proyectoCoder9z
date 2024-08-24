@@ -236,85 +236,25 @@
 
 }
 // ----contacto----
-@media screen and (max-width: 414px) {
-  .image-section {
-    display: none;
+@media screen and (max-width: 768px) {
+	.image-section{
+		display: none;
+	}
+	.contactContainer {
+	  flex-direction: column; /* Apila los elementos en dispositivos pequeños */
+	}
+  
+	.form-section, 
+	.image-section {
+	  flex: 1;
+	}
+  
+	.image-section .placeholder-img {
+	  height: auto;
+	  object-fit: contain; /* Ajusta el contenido de la imagen para pantallas pequeñas */
+	}
   }
-
-  .contactContainer {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .form-section {
-	padding: 0 !important;
-
-    .card {
-      padding: 0 !important;
-      box-shadow: none;
-      border: 0;
-      margin: 0 auto;
-
-      .card-header {
-        h1 {
-          font-size: 20px;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-
-        p {
-          font-size: 14px;
-          padding: 0;
-        }
-      }
-
-      .card-content {
-        padding: 10px;
-
-        .form-grid {
-          grid-template-columns: 1fr;
-          gap: 8px;
-        }
-
-        .form-group {
-          input,
-          textarea {
-            font-size: 12px;
-            padding: 8px;
-          }
-        }
-      }
-
-      .card-footer {
-        padding: 12px;
-        margin-bottom: 10px;
-
-        .submit-button {
-          width: 100%;
-          padding: 10px;
-          font-size: 14px;
-        }
-      }
-    }
-
-    .social-media {
-      padding: 20px;
-
-      p {
-        font-size: 18px;
-        margin-bottom: 20px;
-      }
-
-      .redes {
-        gap: 12px;
-
-        div a {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
+  
 
 // ----tienda----
 @media screen and (max-width: 768px) {

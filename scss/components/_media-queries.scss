@@ -50,64 +50,64 @@
 	.todoVioleta {
 		font-size: 15px;
 	}
-	.footerContainer {
-		display: flex;
-		justify-content: center;
-		flex-direction: column;
-		gap: 0;
-	}
-	.footerFila {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		gap: 30px;
-	}
-	.logoFooter {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-		img {
-			height: 35px;
-		}
-	}
-	.partners {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		h2 {
-			margin-bottom: 10px;
-			font-size: 20px;
-			text-align: center;
-		}
-	}
-	.logoPartners {
-		display: flex;
-		justify-content: center;
-		gap: 10px;
-		img {
-			height: 30px;
-		}
-	}
-	.footerContacto {
-		display: flex;
-		flex-direction: column;
-		// align-items: flex-start;
-		// gap: 4px;
-		// margin-left: auto;
-		// margin-top: 10px;
-		// margin: 30px;
-		a {
-			text-decoration: none;
-			color: $color_1;
-			font-size: 15px;
-		}
-	}
-	.redes {
-		a {
-			font-size: 15px;
-		}
-	}
+	// .footerContainer {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	flex-direction: column;
+	// 	gap: 0;
+	// }
+	// .footerFila {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	width: 100%;
+	// 	gap: 30px;
+	// }
+	// .logoFooter {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-content: center;
+	// 	img {
+	// 		height: 35px;
+	// 	}
+	// }
+	// .partners {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	h2 {
+	// 		margin-bottom: 10px;
+	// 		font-size: 20px;
+	// 		text-align: center;
+	// 	}
+	// }
+	// .logoPartners {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	gap: 10px;
+	// 	img {
+	// 		height: 30px;
+	// 	}
+	// }
+	// .footerContacto {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	// align-items: flex-start;
+	// 	// gap: 4px;
+	// 	// margin-left: auto;
+	// 	// margin-top: 10px;
+	// 	// margin: 30px;
+	// 	a {
+	// 		text-decoration: none;
+	// 		color: $color_1;
+	// 		font-size: 15px;
+	// 	}
+	// }
+	// .redes {
+	// 	a {
+	// 		font-size: 15px;
+	// 	}
+	// }
 }
 @media screen and (max-width: 920px) {
 	.logo {
@@ -146,46 +146,47 @@
 	}
 }
 
+// -----
+// @media screen and (max-width: 768px) {
+//     .footerContainer {
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 20px;
+//     }
 
-@media screen and (max-width: 768px) {
-    .footerContainer {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+//     .logoFooter {
+//         margin-bottom: 20px;
+//     }
 
-    .logoFooter {
-        margin-bottom: 20px;
-    }
+//     .footerFila {
+// 		display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         gap: 20px;
+//         width: 100%;
+//         text-align: center;
 
-    .footerFila {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-        text-align: center;
+//         .partners {
+//             align-items: center;
 
-        .partners {
-            align-items: center;
+//             h2 {
+//                 font-size: 18px;
+//             }
 
-            h2 {
-                font-size: 18px;
-            }
+//             .logoPartners {
+//                 flex-wrap: wrap;
+//                 justify-content: center;
+//             }
+//         }
+//     }
 
-            .logoPartners {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-        }
-    }
-
-    .footerContacto {
-        margin-left: 0;
-        margin-right: 0;
-        align-items: center;
-        text-align: center;
-    }
-}
+//     .footerContacto {
+//         margin-left: 0;
+//         margin-right: 0;
+//         align-items: center;
+//         text-align: center;
+//     }
+// }
 
 @media screen and (max-width: 768px) {
     .footer.footer{
@@ -205,11 +206,12 @@
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            // width: 100%;
+            width: 100%;
             text-align: center;
 
             .partners {
                 align-items: center;
+				margin-bottom: 20px;
 
                 h2 {
                     font-size: 18px;
@@ -218,10 +220,17 @@
                 }
             }
         }
+		.footerRedes {
+			position: static;  // Cancela el position absolute
+			left: auto;        // Cancela el left
+			transform: translateX(0%);
+		}
+
 		.footerContacto {
-            display: flex;
-            flex-direction: column;
-			padding-top: 10px;
+			margin-left: 0;
+			margin-right: 0;
+			align-items: center;
+			text-align: center;
 		}
     }
 

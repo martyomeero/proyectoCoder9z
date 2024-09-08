@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Ponte en contacto con nosotros ante cualquier duda o devolución">
+    <meta name="keywords" content="equipo, counter strike, equipo argentino, 9z team">
+
     <link rel="icon" href="../assets/img/icono.png" type="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +17,7 @@
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
 
-    <title>9Z</title>
+    <title>9Z | Contacto</title>
 </head>
 <body>
 
@@ -30,7 +34,12 @@
             <li><a href="./teams.html">TEAMS</a></li>
         </div>
 
-        <li class="logoIcon"><img src="../assets/img/logo.png" alt="logo" class="logo"></li>
+        <li class="logoIcon">
+            <a href="../index.html">
+              <img src="../assets/img/logo.png" alt="logo" class="logo">
+            </a>
+          </li>
+          
 
         <div class="menuDerecha">
             <li><a href="#">CONTACTO</a></li>
@@ -70,32 +79,34 @@
               </p>
             </div>
             <div class="card-content">
-                <div class="form-group">
-                  <label for="first-name">Nombre</label>
-                  <input id="first-name" placeholder="Nombre">
-                </div>
-                <div class="form-group">
-                  <label for="last-name">Apellido</label>
-                  <input id="last-name" placeholder="Apellido">
-                </div>
-        
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input id="email" placeholder="Email" type="email">
-              </div>
-              <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" placeholder="Mensaje"></textarea>
-              </div>
-              <div class="checkbox-group">
-                <input id="terms" type="checkbox">
-                <label for="terms">Acepto los Términos de tratamiento de datos</label>
+                <form action="https://formsubmit.co/martyromeero@gmail.com" method="POST">
+                  <div class="form-group">
+                    <label for="first-name">Nombre</label>
+                    <input id="first-name" name="first-name" placeholder="Nombre" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Apellido</label>
+                    <input id="last-name" name="last-name" placeholder="Apellido" required>
+                  </div>
+          
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" placeholder="Email" type="email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+                  </div>
+                  <div class="checkbox-group">
+                    <input id="terms" name="terms" type="checkbox" required>
+                    <label for="terms">Acepto los Términos de tratamiento de datos</label>
+                  </div>
+                  <div class="card-footer">
+                    <button class="submit-button" type="submit">ENVIAR</button>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="card-footer">
-              <button class="submit-button">ENVIAR</button>
-            </div>
-          </div>
           <div class="social-media">
             <p>Podes encontrarnos tambien en estas redes</p>
               <div class="redes">

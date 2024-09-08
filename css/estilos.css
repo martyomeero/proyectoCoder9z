@@ -335,6 +335,8 @@ h3 {
   font-size: 14px;
   box-sizing: border-box;
   padding: 10px;
+  color: #4a4385;
+  font-weight: bold;
 }
 .form-section .card .card-content .form-group label {
   font-weight: bold;
@@ -365,6 +367,7 @@ h3 {
   margin: 0;
   margin-bottom: 30px;
   font-size: 20px;
+  text-align: center;
 }
 .form-section .social-media .redes {
   display: flex;
@@ -603,57 +606,6 @@ body {
   .todoVioleta {
     font-size: 15px;
   }
-  .footerContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 0;
-  }
-  .footerFila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 30px;
-  }
-  .logoFooter {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-  .logoFooter img {
-    height: 35px;
-  }
-  .partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .partners h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-  }
-  .logoPartners {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  .logoPartners img {
-    height: 30px;
-  }
-  .footerContacto {
-    display: flex;
-    flex-direction: column;
-  }
-  .footerContacto a {
-    text-decoration: none;
-    color: rgb(201, 201, 201);
-    font-size: 15px;
-  }
-  .redes a {
-    font-size: 15px;
-  }
 }
 @media screen and (max-width: 920px) {
   .logo {
@@ -690,39 +642,6 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  .logoFooter {
-    margin-bottom: 20px;
-  }
-  .footerFila {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    text-align: center;
-  }
-  .footerFila .partners {
-    align-items: center;
-  }
-  .footerFila .partners h2 {
-    font-size: 18px;
-  }
-  .footerFila .partners .logoPartners {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footerContacto {
-    margin-left: 0;
-    margin-right: 0;
-    align-items: center;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
   .footer.footer {
     display: flex;
     justify-content: center;
@@ -739,20 +658,28 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
     text-align: center;
   }
   .footer.footer .footerContainer .footerFila .partners {
     align-items: center;
+    margin-bottom: 20px;
   }
   .footer.footer .footerContainer .footerFila .partners h2 {
     font-size: 18px;
     display: flex;
     justify-content: center;
   }
+  .footer.footer .footerContainer .footerRedes {
+    position: static;
+    left: auto;
+    transform: translateX(0%);
+  }
   .footer.footer .footerContainer .footerContacto {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
